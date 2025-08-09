@@ -286,6 +286,7 @@
       font-family: Arial, Helvetica, sans-serif;
       border-collapse: separate;
       padding: 12px;
+      overflow:auto;
     }
 
     table thead th {
@@ -427,16 +428,8 @@
       min-height: 25px;
     }
 
-    @media(max-width:700px) {
-      .part3 .firma {
-        flex-direction: column;
-
-      }
-    }
-
-    @media (max-width: 650px) {
-      .encabezado {
-        background-color: #000 ;
+    @media(max-width:720px) {
+      .encabezado{        background-color: #000 ;
         background-image: none ;
         color: #fff t;
         padding: 8px 2px;
@@ -446,6 +439,12 @@
         align-items: center;
         justify-content: space-between;
       }
+
+      .part3 .firma {
+        flex-direction: column;
+
+      }
+    }
 
       @media(max-width: 550px) {
         .invoice-to {
@@ -481,9 +480,22 @@
            background: red;
 
         }
+      }
 
+    @media(max-width: 400px) {
+      .firma img{
+        margin-left: 100px;
+        width: 100px;
+        height: auto;
+      }
+      .line {
+        margin-left: 60px;
+        width: 100px;
+        height: auto;
+        background-color: black;
       }
     }
+    
   </style>
 </body>
 
