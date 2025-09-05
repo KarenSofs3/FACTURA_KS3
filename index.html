@@ -102,6 +102,7 @@
           </tr>
         </tbody>
       </table>
+    </div>
       <div class="totales">
         <div class="total-line">
           <span>Subtotal:</span>
@@ -124,7 +125,6 @@
           <p>$3465.00</p>
         </div>
       </div>
-    </div>
     <div class="part3">
       <div class="Parrafo">
         <h3>Terms & Conditions:</h3>
@@ -472,6 +472,30 @@
         .invoice-to {
           flex-direction: column;
           justify-content: center;
+          width: 50%;
+          align-items: center;
+          position: relative;
+          left: 20%;
+          font-size: 20px;
+        }
+
+        .invoice-logo p {
+          font-size: 12px;
+        }
+
+        .invoice-logo {
+          text-align: center;
+          margin-bottom: 10px;
+          position: relative;
+          left: 30px;
+          padding: 0;
+        }
+
+        .encabezado {
+          height: auto;
+          flex-direction: column;
+          text-align: center;
+
         }
 
         .header-overlay {
@@ -498,14 +522,10 @@
           margin-left: 100px;
         }
 
-        .dad::-webkit-scrollbar {
-          width: 300px;
+        .table {
+          overflow-x: scroll;
         }
 
-        .dad ::-webkit-scrollbar-thumb {
-          background: red;
-
-        }
       }
 
       @media(max-width: 400px) {
@@ -520,6 +540,21 @@
           width: 100px;
           height: auto;
           background-color: black;
+        }
+
+        .invoice-to {
+          flex-direction: column;
+          justify-content: center;
+          width: 70%;
+          align-items: center;
+          position: relative;
+          left: 20px;
+          font-size: 20px;
+        }
+
+        .totales{
+          width: 100%;
+          margin: 0;
         }
       }
     </style>
