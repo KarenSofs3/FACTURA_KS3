@@ -290,21 +290,21 @@
                             <img src="comida-1.png">
                             <div class="text3">
                                 <h2>Special offer</h2>
-                                <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor</p>
+                                <p class="lorem">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor</p>
                             </div>
                         </div>
                         <div class="cuadros3">
                             <img src="comida-2.png">
                             <div class="text3">
                                 <h2>Special offer</h2>
-                                <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor</p>
+                                <p class="lorem">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor</p>
                             </div>
                         </div>
                         <div class="cuadros3">
                             <img src="comida-3.png">
                             <div class="text3">
                                 <h2>Special offer</h2>
-                                <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor</p>
+                                <p class="lorem">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor</p>
                             </div>
                         </div>
                     </div>
@@ -449,7 +449,6 @@
             margin: 0;
 
         }
-
 
         .buscador {
             margin: 20px;
@@ -677,7 +676,6 @@
             border-top: 1px solid grey;
             padding: 10px 0 10px 7px;
             background: #f9f9f9;
-
         }
 
         .precios {
@@ -1024,6 +1022,7 @@
             padding-left: 8px;
             color: #333;
             margin: 0;
+            font-size: 12px;
         }
 
         .text3 h2 {
@@ -1032,7 +1031,8 @@
 
         .text3 p {
             margin: 6px 0px 25px 0px;
-            width: 95%;
+            width: 90%;
+            font-size: 12px;
         }
 
         .pie {
@@ -1356,6 +1356,13 @@
             }
         }
 
+        @media(max-width:780px){
+            .p2 p{
+              position: absolute;
+              top: -7px;
+            }
+        }
+
         @media(max-width: 720px) {
             .pestañas {
                 display: grid;
@@ -1422,9 +1429,9 @@
                 font-size: 14px;
             }
 
-            .p2 p {
-                position: relative;
-                top: -6px
+            .p2 p{
+              position: absolute;
+              top: 0px;
             }
 
             .information {
@@ -1537,7 +1544,10 @@
                 right: -19px;
                 left: 132px;
                 width: 50%;
+            }
 
+            .p{
+                font-size: 16px;
             }
 
             .cuadro {
@@ -1548,15 +1558,16 @@
             .boton_iz {
                 margin: 30px 30px 30px 220px;
             }
+
+            .text3 p{
+                font-size: 18px;
+            }
         }
 
         @media(max-width: 430px) {
-            .cuadro .p {
-                font-size: 18px;
-            }
 
             .text2 p {
-                font-size: 19px;
+                font-size: 18px;
             }
 
             .compra img{
@@ -1588,12 +1599,32 @@
                 font-size: 16px;
             }
 
-            .cuadros3 p{
-                font-size: 22px;
+            .pie p{
+                font-size: 20px;
             }
 
-            .cuadros3 h2{
-                font-size: 25px;
+            .compra p{
+                position: absolute;
+                top: -5px;
+            }
+
+            .text3 p{
+                font-size: 18px;
+            }
+            
+        }
+
+        @media(max-width: 380px ){
+            .pie_pagina{
+                font-size: 20px;
+            }
+
+            .pie_pagina p span{
+                font-size: 20px;
+            }
+            
+            .text3 p{
+                font-size: 20px;
             }
         }
     </style>
